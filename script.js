@@ -122,8 +122,8 @@ class Minesweeper {
         this.time = 0;
         this.flags = 0;
         this.gameOver = false;
-        document.getElementById("time").innerText = this.time;
         document.getElementById("flags").innerText = this.flags;
+        document.getElementById("time").innerText = this.time;
         let boardHtml = "";
         for (let i = 0; i < this.height; i++) {
             for (let j = 0; j < this.width; j++) {
