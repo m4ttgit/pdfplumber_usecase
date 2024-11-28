@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.game-container {
+    width: 400px;
+    margin: 40px auto;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-gap: 5px;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #aaa;
+}
+
+.cell.revealed {
+    background-color: #fff;
+}
+
+.cell.flagged {
+    background-color: #ff0;
+}
+
+.game-info {
+    margin-top: 20px;
+}
